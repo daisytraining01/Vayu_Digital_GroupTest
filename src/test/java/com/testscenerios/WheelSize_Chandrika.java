@@ -57,8 +57,7 @@ public class WheelSize_Chandrika extends WheelSize_Homepage_Chandrika{
 			capabilities.setCapability("accessKey", accessKey);
 			capabilities.setCapability("deviceQuery", "@os='android' and @category='PHONE'");
 			capabilities.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, "com.wheelsize");
-			capabilities.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY,
-					"com.wheelsize.presentation.container.AppContainer");
+			capabilities.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY,"com.wheelsize.presentation.container.AppContainer");
 			driver = new AndroidDriver(new URL("https://demo.experitest.com/wd/hub"), capabilities);
 
 		}
