@@ -1,0 +1,4 @@
+# Created at 2020-06-09T12:43:24.769
+Boot Manifest-JAR contains absolute paths in classpath 'D:\DigitalWorkspace\VayuDigital\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+

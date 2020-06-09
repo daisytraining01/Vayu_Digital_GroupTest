@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="none">
+  <parameter name="ModeOfRun" value="Emulator"/>
+  <listeners>
+    <listener class-name="com.utilities.Listener_Vimal"/>
+  </listeners>
+  <test name="Testing in Emulator">
+    <parameter name="ModeOfRun" value="Emulator"/>
+    <classes>
+      <class name="com.testscenerios.EMI_Vimal"/>
+    </classes>
+  </test> <!-- Testing in Emulator -->
+</suite> <!-- Failed suite [Suite] -->

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="com.utilities.Listener_Vimal">
+		</listener>
+	</listeners>
+<!-- 	<test name="Testing in Emulator"> -->
+<!-- 		<parameter name="ModeOfRun" value="Emulator" /> -->
+<!-- 		<classes> -->
+<!-- 			<class name="com.testscenerios.EMI_Vimal" /> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
+
+<!-- 	<test name="Testing in Cloud"> -->
+<!-- 		<parameter name="ModeOfRun" value="Cloud" /> -->
+<!-- 		<classes> -->
+<!-- 			<class name="com.testscenerios.EMI_Vimal" /> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
+
+	<test name="Testing in Real Device">
+		<parameter name="ModeOfRun" value="Real" />
+		<classes>
+			<class name="com.testscenerios.EMI_Vimal" />
+		</classes>
+	</test>
+
+</suite>
