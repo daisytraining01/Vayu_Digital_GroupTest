@@ -8,7 +8,7 @@
   <test name="Testing in Emulator">
     <parameter name="ModeOfRun" value="Emulator"/>
     <classes>
-      <class name="com.testscenerios.EMI_Vimal"/>
+      <class name="com.testscenerios.WheelSize_Chandrika"/>
     </classes>
   </test> <!-- Testing in Emulator -->
 </suite> <!-- Failed suite [Suite] -->
