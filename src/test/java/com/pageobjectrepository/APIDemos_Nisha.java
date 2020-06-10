@@ -12,5 +12,6 @@ public class APIDemos_Nisha {
 	public static final By Multiple_Properties = By
 			.xpath("//android.widget.TextView[@content-desc='Multiple Properties']");
 	public static final By startButton = By.id("io.appium.android.apis:id/startButton");
+	 public static final By title = By.xpath("/hierarchy/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[1]/android.view.ViewGroup/android.widget.TextView");
 
 }
