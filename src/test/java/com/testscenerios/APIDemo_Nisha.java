@@ -8,7 +8,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.ScreenOrientation;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.Assert;
+import org.testng.ITestContext;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
@@ -24,10 +26,17 @@ import io.appium.java_client.remote.AndroidMobileCapabilityType;
 
 import com.pageobjectrepository.APIDemos_Nisha;
 import com.utilities.Listener_Vimal;
+import com.utilities.Screenshot_Vimal;
 
 @Listeners(com.utilities.Listener_Vimal.class)
 public class APIDemo_Nisha extends APIDemos_Nisha {
 	public static AppiumDriver driver;
+	Screenshot_Vimal scren;
+	
+	@BeforeClass
+	public void objectCreation() {
+		scren = new Screenshot_Vimal();
+	}
 
 	@Parameters({ "ModeOfRun" })
 	@BeforeTest
@@ -79,7 +88,7 @@ public class APIDemo_Nisha extends APIDemos_Nisha {
 	}
 
 	@Test
-	public void Chronometer_Nisha() throws InterruptedException {
+	public void Chronometer_Nisha(final ITestContext testContext) throws Exception {
 		driver.findElement(Views).click();
 		Thread.sleep(5000);
 		driver.findElement(Chronometer).click();
@@ -88,17 +97,21 @@ public class APIDemo_Nisha extends APIDemos_Nisha {
 		Thread.sleep(5000);
 		driver.findElement(stop).click();
 		Thread.sleep(5000);
+		scren.takeSnapShot(driver, testContext.getName());
 
 	}
 
 	@Test
-	public void Animation_Nisha() throws InterruptedException {
+	public void Animation_Nisha(final ITestContext testContext) throws Exception {
 		driver.findElement(Animation).click();
 		Thread.sleep(5000);
 		driver.findElement(Multiple_Properties).click();
 		Thread.sleep(5000);
 		driver.findElement(startButton).click();
 		Thread.sleep(5000);
+		scren.takeSnapShot(driver, testContext.getName());
+		String str = driver.findElement(title).getText();
+		Assert.assertEquals(str, "Animation/Multiple Properties");
 
 	}
 
