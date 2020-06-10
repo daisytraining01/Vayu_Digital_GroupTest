@@ -5,19 +5,6 @@
 		<listener class-name="com.utilities.Listener_Vimal">
 		</listener>
 	</listeners>
-	<!-- <test name="Testing in Emulator"> -->
-	<!-- <parameter name="ModeOfRun" value="Emulator" /> -->
-	<!-- <classes> -->
-	<!-- <class name="com.testscenerios.WheelSize_Chandrika" /> -->
-	<!-- </classes> -->
-	<!-- </test> -->
-
-	<!-- <test name="Testing in Real Device"> -->
-	<!-- <parameter name="ModeOfRun" value="Real" /> -->
-	<!-- <classes> -->
-	<!-- <class name="com.testscenerios.WheelSize_Chandrika" /> -->
-	<!-- </classes> -->
-	<!-- </test> -->
 
 	<test name="Testing in Cloud Chandrika">
 		<parameter name="ModeOfRun" value="Cloud" />
