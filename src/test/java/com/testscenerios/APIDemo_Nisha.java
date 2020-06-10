@@ -110,6 +110,8 @@ public class APIDemo_Nisha extends APIDemos_Nisha {
 		driver.findElement(startButton).click();
 		Thread.sleep(5000);
 		scren.takeSnapShot(driver, testContext.getName());
+		String str = driver.findElement(title).getText();
+		Assert.assertEquals(str, "Animation/Multiple Properties");
 
 	}
 
