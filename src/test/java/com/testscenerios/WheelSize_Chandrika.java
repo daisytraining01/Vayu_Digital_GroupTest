@@ -6,6 +6,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.testng.Assert;
 import org.testng.ITestContext;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
@@ -19,14 +20,15 @@ import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.remote.AndroidMobileCapabilityType;
 
 import com.pageobjectrepository.*;
-import com.utilities.Screenshot_Vimal;
+import com.utilities.*;
 
 @Listeners(com.utilities.Listener_Vimal.class)
-public class WheelSize_Chandrika extends WheelSize_Homepage_Chandrika{
+public class WheelSize_Chandrika extends WheelSize_Homepage_Chandrika {
 
 	public static AndroidDriver driver;
 	Screenshot_Vimal scren;
-	
+	Action_Vimal action;
+
 	@BeforeClass
 	public void objectCreation() {
 		scren = new Screenshot_Vimal();
@@ -84,7 +86,7 @@ public class WheelSize_Chandrika extends WheelSize_Homepage_Chandrika{
 
 	@Test
 	public void WheelappDemo(final ITestContext testContext) throws Exception {
-
+		action = new Action_Vimal(driver);
 		driver.findElement(make).click();
 		Thread.sleep(10000);
 		driver.findElement(makePath).click();
@@ -95,7 +97,10 @@ public class WheelSize_Chandrika extends WheelSize_Homepage_Chandrika{
 		Thread.sleep(10000);
 		driver.findElement(trim).click();
 		Thread.sleep(5000);
+		String str = driver.findElement(title).getText();
+		System.out.println(str);
 		scren.takeSnapShot(driver, testContext.getName());
+		Assert.assertEquals(str, "2019 Audi A1, 30 TFSi [GB]");
 
 	}
 
