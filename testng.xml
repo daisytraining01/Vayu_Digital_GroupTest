@@ -25,19 +25,5 @@
 			<class name="com.testscenerios.WheelSize_Chandrika" />
 		</classes>
 	</test>
-	<test name="Testing in Cloud Vimal">
-		<parameter name="ModeOfRun" value="Cloud" />
-		<classes>
-			<class name="com.testscenerios.EMI_Vimal" />
-		</classes>
-	</test>
-	<test name="Testing in Cloud Nisha">
-		<parameter name="ModeOfRun" value="Cloud" />
-		<classes>
-			<class name="com.testscenerios.APIDemo_Nisha" />
-		</classes>
-	</test>
-
-
 
 </suite>
