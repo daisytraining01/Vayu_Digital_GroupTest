@@ -5,22 +5,8 @@
 		<listener class-name="com.utilities.Listener_Vimal">
 		</listener>
 	</listeners>
-<!-- 	<test name="Testing in Emulator"> -->
-<!-- 		<parameter name="ModeOfRun" value="Emulator" /> -->
-<!-- 		<classes> -->
-<!-- 			<class name="com.testscenerios.EMI_Vimal" /> -->
-<!-- 		</classes> -->
-<!-- 	</test> -->
-
-<!-- 	<test name="Testing in Cloud"> -->
-<!-- 		<parameter name="ModeOfRun" value="Cloud" /> -->
-<!-- 		<classes> -->
-<!-- 			<class name="com.testscenerios.EMI_Vimal" /> -->
-<!-- 		</classes> -->
-<!-- 	</test> -->
-
-	<test name="Testing in Real Device">
-		<parameter name="ModeOfRun" value="Real" />
+	<test name="Testing in Cloud Vimal">
+		<parameter name="ModeOfRun" value="Cloud" />
 		<classes>
 			<class name="com.testscenerios.EMI_Vimal" />
 		</classes>
